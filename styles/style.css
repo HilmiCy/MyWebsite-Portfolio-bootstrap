@@ -1,0 +1,285 @@
+/* Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Variabel */
+:root {
+    --primary-color: #2095DE;
+    --dark-color: #0f0f0f;
+    --grey-color: grey;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+
+/* Reset Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Global css */
+section {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-blue {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-secondary {
+    color: #2095DE; /* Warna teks */
+    text-shadow:
+      -1px -1px 0 #fff, /* Outline putih ke kiri atas */
+      1px -1px 0 #fff, /* Outline putih ke kanan atas */
+      -1px 1px 0 #fff, /* Outline putih ke kiri bawah */
+      1px 1px 0 #fff; /* Outline putih ke kanan bawah */
+  }
+  
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* Section Style */
+/* navbar style */
+
+/* Tambahkan animasi untuk efek aliran warna pada navbar */
+/* Tambahkan animasi untuk efek aliran warna pada border-bottom */
+/* Animasi untuk efek aliran warna pada border-bottom */
+@keyframes borderFlow {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  /* Terapkan animasi aliran warna pada border-bottom */
+  .navbar {
+    position: relative;
+  }
+  
+  .navbar::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(270deg, transparent 0%, #2095DE 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: borderFlow 4s infinite linear;
+  }
+  
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar .navbar-brand, 
+.navbar .nav-item .nav-link {
+    color: var(--dark-color);
+}
+
+/* header style */
+.header-section .header-title {
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+    color: var(--dark-color);
+}
+
+.header-section .header-skill:hover {
+    color: var(--primary-color);
+}
+
+.header-section .header-img, .skills-section .skills-img {
+    width: 90%;
+}
+
+
+ /* Efek Paralaks */
+ .header-section {
+    height: 100vh;
+    /* Tambahkan posisi relative untuk menempatkan konten di atas latar belakang */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-section::before {
+    /* Atur posisi latar belakang menjadi tetap */
+    background-attachment: fixed;
+    /* Atur posisi dan ukuran */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Tambahkan efek transisi untuk perubahan posisi latar belakang */
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+  }
+  
+  .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-in-out; /* Efek paralaks menggunakan transisi */
+  }
+  
+  .header-section:hover .header-bg {
+    transform: translateY(-20%); /* Ubah nilai sesuai keinginan untuk efek paralaks */
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    border: 5px solid #7777; /* Warna border */
+    border-radius: 20px; /* Efek kelengkungan pada border */
+    box-shadow: 0px 0px 20px rgba(32, 149, 222, 0.3), 0px 0px 30px rgba(32, 149, 222, 0.1) inset; /* Shadow effect */
+  }
+
+  .header-section:hover::before {
+    /* Menerapkan sedikit perubahan transformasi */
+    transform: scale(1.1);
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  /* Efek Paralaks saat menggulir */
+  .header-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+  }
+/* portfolio style */
+.portfolio-section .card .card-img-top {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    
+}
+
+.bx-sun:before {
+    content: "\f185"; 
+}
+
+.bx-moon:before {
+    content: "\f186"; 
+}
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #000; 
+    margin-left: 10px;
+}
+
+.dark-mode-toggle i {
+    font-size: 24px;
+    color: #333333; 
+}
+
+/* Efek Hover pada Tombol */
+.btn {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #ff6600; 
+    color: #fff;
+  }
+
+    /* Gaya untuk tombol "Scroll to Top" */
+    #scrollTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #333; /* Warna latar belakang tombol */
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s ease; /* Efek transisi saat hover */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+      }
+      
+      #scrollTopBtn i {
+        font-size: 18px; /* Ubah ukuran ikon sesuai kebutuhan */
+      }
+      
+      #scrollTopBtn:hover {
+        background-color: #555; /* Warna latar belakang saat hover */
+      }
+      
+@media screen and (max-width : 768px){
+    .portfolio-section .card .card-img-top{
+        height: 100px;
+    }
+}
+  

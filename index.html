@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Website</title>
+    <!--Scroll to top-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css">
+    <!-- swiper js -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white  fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Fadhil Cahya Hilmi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#header">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#timeline">Timeline</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <div class="dark-mode-toggle ms-auto">
+                    <i class="bx bx-moon" id="modeIcon" onclick="toggleMode()"></i>
+                </div>
+            </li>
+            </li>            
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+    <!-- header start -->
+    <section class="header-section mt-5" id="header" style="background-image: url('images/bg-abstrak.png'); background-attachment: fixed; background-size: cover;">
+    <div class="header-bg"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <p class="text-orange fw-semibold fw-bold">Fadhil Cahya Hilmi</p>
+                    <h1 class="header-title text-uppercase fw-bold mb-5">creative design <br class="d-none d-md-block">based in indonesia</h1>
+
+                    <a href="#" class="header-skill d-inline-flex align-item-center gap-2 text-decoration-none">Web Developer <i class="bx bx-right-arrow-alt fs-4"></i> </a>
+                    <br>
+                    <a href="#" class="header-skill d-inline-flex align-item-center gap-2 text-decoration-none">Mobile Developer <i class="bx bx-right-arrow-alt fs-4"></i> </a>
+                    <br>
+                    <a href="#" class="header-skill d-inline-flex align-item-center gap-2 text-decoration-none">UI/UX Designer <i class="bx bx-right-arrow-alt fs-4"></i> </a>
+
+                    <div class="d-flex align-items-center gap-4 mt-5">
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 class="header-skill fw-bold mb-0">2K</h2>
+                            <p class="text-secondary fs-7 mb-0">Years of <br>Experience</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 class="header-skill fw-bold mb-0">1K</h2>
+                            <p class="text-secondary fs-7 mb-0">Happy <br>Customers</p>
+                        </div>
+                    </div>
+                </div>
+                    <!-- header img -->
+                    <div class="col-md-5">
+                        <img src="images/profile-img.png" alt="" class="header-img" height="450" width="500">
+                    </div>
+                    <!-- header img -->
+            </div>
+        </div>
+    </section>
+    <!-- header end -->
+
+    <!-- portfolio start -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <p class="text-orange fw-semibold">Porfolio</p>
+            <h2 class="section-title mb-5">selected works</h2>
+
+            <div class="swiper portfolio-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/MakanKuy-UI.png" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">MakanKuy Website UI</h6>
+                                <a href="https://www.figma.com/file/TtzkrDECcPuKNVpwH8pDih/Project-Tampilan-Visual-Website-Toko--Online-Prakerja_Fadhil-Cahya-Hilmi?type=design&node-id=86%3A14&mode=design&t=eZ0XyqvpYQQVx5Uc-1" class="text-orange text-decoration-none">Detail Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/portfolio-2.jpg" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">KedaiPokit Website UI</h6>
+                                <a href="https://www.figma.com/file/WpU5ijo8niut5EoLXrwvDP/Untitled?type=design&node-id=0%3A1&mode=design&t=cBzUGUfCWZJTAuyk-1" class="text-orange text-decoration-none">Detail Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/portfolio-3.jpg" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">Portfolio Website</h6>
+                                <a href="https://mycvhilmicy.000webhostapp.com" class="text-orange text-decoration-none">Detail Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/portfolio-4.jpg" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">All Project Github</h6>
+                                <a href="https://github.com/HilmiCy" class="text-orange text-decoration-none">Detail Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-item-center justify-content-end gap-3 mt-3">
+                <button class="btn btn-light d-flex align-items-center justify-content-center btn-prev"><i class="bx bx-left-arrow-alt fs-5"></i></button>
+                <button class="btn btn-light d-flex align-items-center justify-content-center btn-next"><i class="bx bx-right-arrow-alt fs-5"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio end -->
+
+    <!-- skills start -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <div class="col-md-12">
+                    <p class="text-orange fw-semibold">Skills</p>
+                    <h2 class="section-title text-black mb-5">
+                        Programming and Design Skills
+                    </h2>
+
+                    <div class="row">
+                        <div class="col-md-2 mb-5">
+                            <img src="images/html (1).png" alt="" height="90px" width="70px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/css.png" alt="" height="100px" width="100px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/js.png" alt="" height="90px" width="70px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/c++.png" alt="" height="90px" width="90px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/python.png" alt="" height="90px" width="100px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/kotlin.png" alt="" height="120px" width="170px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/java.jpg" alt="" height="120px" width="120px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/figma.png" alt="" height="120px" width="150px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/blender.png" alt="" height="120px" width="190px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/Microsoft-SQL-Server.png" alt="" height="120px" width="190px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/aftereffect.png" alt="" height="120px" width="170px">
+                        </div>
+                        <div class="col-md-2 mb-5">
+                            <img src="images/bootsrap.png" alt="" height="120px" width="160px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills end -->
+    
+     <!-- Timeline -->
+
+     <section class="timeline-action" id="timeline">
+        <div class="container">
+            <p class="text-orange fw-semibold">Timeline</p>
+            <h2 class="section-title mb-5">Organization</h2>
+
+            <div class="row py-3 border-button">
+                <div class="col-md-4">2018 - 2019</div>
+                <div class="col-md-4">VICE PRESIDENT OF STUDENT COUNCIL (MPK)</div>
+                <div class="col-md-4">SMA NEGERI 1 TARUMAJAYA</div>
+        </div>
+
+        <div class="row py-3 border-button">
+            <div class="col-md-4">2016 - 2017</div>
+            <div class="col-md-4">PRESIDENT OF STUDENT COUNCIL (OSIS)</div>
+            <div class="col-md-4">SMP NEGERI 2 TARUMAJAYA</div>
+        </div>
+      </div>
+     </section>
+    <!-- End of timeline -->
+
+    <section class="portfolio-section" id="news">
+        <div class="container">
+            <p class="text-orange fw-semibold">News</p>
+            <h2 class="section-title mb-5">Selected works</h2>
+            <div class="swiper portfolio-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/pkm-news.jpg" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">Kegiatan Pengabdian Kepada Masyarakat Universitas Pamulang</h6>
+                                <p class="text-secondary fs-7">November, 20 2023</p>
+                                <a href="https://nusantarasatu.com/2023/11/20/sosialisasi-pengenalan-bahasa-pemrograman-dan-potensinya-dalam-membangun-karir-di-madrasah-aliyah-ma-daarul-hikmah-pamulang/" class="text-orange fs-7">Detail News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/news-2.png" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">3 Cara Membuat Portofolio yang Menarik dan Profesional Agar Mudah Diterima Kerja</h6>
+                                <p class="text-secondary fs-7">Desember, 01 2023</p>
+                                <a href="https://blog.skillacademy.com/cara-membuat-portofolio-yang-menarik-dan-profesional" class="text-orange fs-7">Detail News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/news-3.png" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">Bagaimana Membuat Web Portfolio Keren</h6>
+                                <p class="text-secondary fs-7">Desember, 01 2023</p>
+                                <a href="#" class="text-orange fs-7">Detail News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/news-4.png" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">Bagaimana Membuat Web Portfolio Keren</h6>
+                                <p class="text-secondary fs-7">Desember, 01 2023</p>
+                                <a href="#" class="text-orange fs-7">Detail News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/news-5.png" alt="" class="card-img-top">
+                                <h6 class="fw-semibold">Bagaimana Membuat Web Portfolio Keren</h6>
+                                <p class="text-secondary fs-7">Desember, 01 2023</p>
+                                <a href="#" class="text-orange fs-7">Detail News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+                <button class="btn btn-light d-flex align-items-center justify-content-center btn-prev">
+                    <i class="bx bx-left-arrow-alt fs-5"></i>
+                </button>
+                <button class="btn btn-light d-flex align-items-center justify-content-center btn-next">
+                    <i class="bx bx-right-arrow-alt fs-5"></i>
+                </button>
+            </div>
+        </div>
+     </div>
+
+        <!-- contact -->
+        <div class="portfolio-section" id="contact">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6">
+                        <p class="text-orange fw-semibold">Contact</p>
+                        <h2 class="section-title mb-5">Get in Touch</h2>
+                        <div class="text-secondary mb-5"></div>
+                        <p class="text-secondary mb-3">Saya adalah mahasiswa Teknik Informatika yang juga Front-end Developer dan UI/UX Designer. Saya menciptakan aplikasi web responsif dan menarik secara visual dengan fokus pada pengalaman pengguna yang intuitif. Portofolio saya mencerminkan dedikasi saya dalam menggabungkan keterampilan pengembangan dengan desain yang memikat. Saya bersemangat untuk terus menciptakan solusi teknologi yang mengesankan dan bermanfaat.</p>
+                        
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bx bx-map-pin text-orange fs-5"></i>
+                            <div class="mb-0">kota Bekasi, Jawa Barat Indonesia</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bx bx-phone-call text-orange fs-5"></i>
+                            <div class="mb-0">+6282116580883</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bx bx-envelope text-orange fs-5"></i>
+                            <div class="mb-0">fadhilcahya52@gmail.com</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bx bx-globe text-orange fs-5"></i>
+                            <div class="mb-0">https://mycvhilmicy.000webhostapp.com</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <form action="#" method="">
+                            <input type="text" name="name" id="name" placeholder="name" class="form-control rounded-0 mb-2">
+                            <input type="text" name="name" id="email" placeholder="email" class="form-control rounded-0 mb-2">
+                            <textarea name="body" id="body" placeholder="Message" class="form-control rounded-0 mb-lg-2" cols="30" rows="3"></textarea>
+                            <button class="btn btn-dark w-100 rounded-0">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to Top Button -->
+       <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </section>
+      <!-- Footer -->
+      <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Fadhil Cahya Hilmi. All Rights Reserved.</p>
+            <ul class="list-inline mb-0 mt-3">
+                <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//web.facebook.com/profile.php?id=100008183807652" class="text-white me-3"><i class="bx bxl-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.tiktok.com/@hilmicy?is_from_webapp=1&sender_device=pc" class="text-white me-3"><i class="bx bxl-tiktok"></i></a></li>
+                <li class="list-inline-item"><a href="https://instagram.com/hilmi_cy" class="text-white me-3"><i class="bx bxl-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="https://linkedin.com/in/fadhil-cahya-hilmi-6759a321b" class="text-white"><i class="bx bxl-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/HilmiCy" class="text-white me-3"><i class="bx bxl-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+<!-- End Footer -->
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    const currentTheme = localStorage.getItem("theme");
+
+    const icon = document.getElementById('modeIcon');
+
+    if (currentTheme === "dark" || (prefersDarkScheme.matches && !currentTheme)) {
+    document.body.classList.add('dark-mode');
+    icon.classList.remove('bx-moon');
+    icon.classList.add('bx-sun');
+    } else {
+    icon.classList.add('bx-moon');
+    icon.classList.remove('bx-sun');
+    }
+
+    function toggleMode() {
+    const body = document.body;
+
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        icon.classList.remove('bx-moon');
+        icon.classList.add('bx-sun');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        icon.classList.remove('bx-sun');
+        icon.classList.add('bx-moon');
+        localStorage.setItem('theme', 'light');
+    }
+    }
+    </script>
+
+    <script>
+    // Mengaktifkan smooth scrolling untuk semua tautan di navbar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    </script>
+
+    <script>
+        // Fungsi untuk melakukan scroll ke atas
+        function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        }
+
+        // Periksa jarak guliran sebelum menampilkan tombol "Scroll to Top"
+        window.onscroll = function() {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        var scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            scrollTopBtn.style.display = 'block';
+        } else {
+            scrollTopBtn.style.display = 'none';
+        }
+        }
+    </script>
+
+        <script>
+            window.addEventListener('scroll', function () {
+            let scroll = window.scrollY;
+            let headerBg = document.querySelector('.header-bg');
+            let headerSection = document.querySelector('.header-section');
+        
+            headerBg.style.transform = `translateY(-${scroll * 0.3}px)`;
+            headerSection.style.opacity = 1 - scroll / headerSection.offsetHeight;
+            });
+        </script>
+    <!-- swiper -->
+    <script>
+        var swiper = new Swiper(".portfolio-swiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
+          },
+          //Responsive view in swiperjs
+          breakpoints: {
+    // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+  }
+        });
+    </script>
+
+    
+</body>
+</html>
